@@ -263,13 +263,6 @@ class MainMenuState extends MusicBeatState
 					LoadingState.loadAndSwitchState(new PlayState(), true);
 				});
 			case 'options':
-				trace("Story Menu Selected");
-			case 'freeplay':
-				FlxG.switchState(new FreeplayState());
-
-				trace("Freeplay Menu Selected");
-
-			case 'options':
 				FlxG.switchState(new OptionsMenu());
 		}
 	}
